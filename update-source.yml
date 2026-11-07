@@ -1,0 +1,50 @@
+name: 更新 AltStore / SideStore 源
+
+on:
+  schedule:
+    # 每 6 小时跑一次（UTC 时间整点）
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-altstore-source
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 准备 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 生成源文件
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_OWNER: mikufoxxx
+          REPO_NAME: Wenku8_Flutter
+          IPA_ASSET_SUFFIX: -ios-unsigned.ipa
+          OUTPUT_FILE: alt_store.json
+          ICON_FILE: icon.png
+          SOURCE_BRANCH: main
+          MAX_VERSIONS: "8"
+        run: python scripts/update_source.py
+
+      - name: 提交并推送变更
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add alt_store.json icon.png
+          if git diff --cached --quiet; then
+            echo "源文件没有变化，跳过提交"
+            exit 0
+          fi
+          git commit -m "chore: refresh source $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push

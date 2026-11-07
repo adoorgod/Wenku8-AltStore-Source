@@ -1,0 +1,47 @@
+{
+  "name": "轻小说文库 Wenku8 源",
+  "identifier": "org.mewx.wenku8Flutter.altstore.source",
+  "subtitle": "非官方 AltStore / SideStore 安装源",
+  "description": "轻小说文库（Wenku8）第三方客户端的安装源。\n\n安装包直接来自上游 GitHub Release，未签名，需要自行签名后侧载。",
+  "website": "https://github.com/mikufoxxx/Wenku8_Flutter/releases/tag/v0.5.6",
+  "tintColor": "#5B8DEF",
+  "iconURL": "https://raw.githubusercontent.com/<your-github-user>/<your-repo>/main/icon.png",
+  "apps": [
+    {
+      "name": "轻小说文库 Wenku8",
+      "bundleIdentifier": "org.mewx.wenku8Flutter",
+      "developerName": "mikufoxxx",
+      "subtitle": "轻小说文库与本地书籍阅读器",
+      "localizedDescription": "轻小说文库（Wenku8）第三方阅读客户端，支持在线书架、本地书籍导入、离线阅读与朗读。安装包由上游 Release 提供，未签名，需自行签名侧载。",
+      "iconURL": "https://raw.githubusercontent.com/<your-github-user>/<your-repo>/main/icon.png",
+      "tintColor": "#5B8DEF",
+      "category": "other",
+      "version": "0.5.6",
+      "versionDate": "2026-11-03",
+      "versionDescription": "免费使用，请勿付费\n\n本项目完全免费，请勿购买所谓付费版、激活码或解锁服务。\n\n☕ 请我喝杯咖啡 · 爱发电\n\n本项目为第三方客户端，并非轻小说文库（Wenku8）官方应用，也不运营该站点。在线书目与内容来自轻小说文库，本地书籍由用户自行导入，安装包不附带小说文件。\n\n小说、封面和插图归各自权利人所有。请仅使用有权访问的内容，遵守来源网站规则，不得绕过访问限制、破解 DRM，或未经许可传播、出售内容。\n\n在线内容以轻小说文库开放状态为准，不提供因版权限制而停止开放的在线书籍阅读。\n\n本 APP 仅支持轻小说文库及本地导入，不再支持其他源或自定义书源。\n\n本次更新\n\n修复听书被通知等短暂打断后，可能无法恢复播放的问题。\n修复本地书籍在线听书时，临时缓存被清理后可能出现“缓存失败”的问题。\n优化在线语音的断线重试；加载失败时保留当前段落，避免跳过正文。\n修复连续听书时音频资源累积的问题，改善长时间使用的内存占用与流畅度。\n\n后续维护\n\n项目以稳定维护为主，后续非必要不再发版。\n\n安装说明\n\nAndroid：直接覆盖更新，不要先卸载旧版。\niOS：提供未签名包，主应用与小组件均需自行签名。\nHarmonyOS：提供未签名包，需自行签名后安装。\niOS／HarmonyOS 0.5.0 用户：请先手动更新一次。\n\n升级、整理存储或同步前，请先备份重要书籍和阅读记录。",
+      "versionType": "release",
+      "downloadURL": "https://github.com/mikufoxxx/Wenku8_Flutter/releases/download/v0.5.6/wenku8-0.5.6-ios-unsigned.ipa",
+      "size": 39277656,
+      "minOSVersion": "13.0",
+      "versions": [
+        {
+          "version": "0.5.6",
+          "date": "2026-11-03",
+          "localizedDescription": "免费使用，请勿付费\n\n本项目完全免费，请勿购买所谓付费版、激活码或解锁服务。\n\n☕ 请我喝杯咖啡 · 爱发电\n\n本项目为第三方客户端，并非轻小说文库（Wenku8）官方应用，也不运营该站点。在线书目与内容来自轻小说文库，本地书籍由用户自行导入，安装包不附带小说文件。\n\n小说、封面和插图归各自权利人所有。请仅使用有权访问的内容，遵守来源网站规则，不得绕过访问限制、破解 DRM，或未经许可传播、出售内容。\n\n在线内容以轻小说文库开放状态为准，不提供因版权限制而停止开放的在线书籍阅读。\n\n本 APP 仅支持轻小说文库及本地导入，不再支持其他源或自定义书源。\n\n本次更新\n\n修复听书被通知等短暂打断后，可能无法恢复播放的问题。\n修复本地书籍在线听书时，临时缓存被清理后可能出现“缓存失败”的问题。\n优化在线语音的断线重试；加载失败时保留当前段落，避免跳过正文。\n修复连续听书时音频资源累积的问题，改善长时间使用的内存占用与流畅度。\n\n后续维护\n\n项目以稳定维护为主，后续非必要不再发版。\n\n安装说明\n\nAndroid：直接覆盖更新，不要先卸载旧版。\niOS：提供未签名包，主应用与小组件均需自行签名。\nHarmonyOS：提供未签名包，需自行签名后安装。\niOS／HarmonyOS 0.5.0 用户：请先手动更新一次。\n\n升级、整理存储或同步前，请先备份重要书籍和阅读记录。",
+          "downloadURL": "https://github.com/mikufoxxx/Wenku8_Flutter/releases/download/v0.5.6/wenku8-0.5.6-ios-unsigned.ipa",
+          "size": 39277656,
+          "minOSVersion": "13.0",
+          "sha256": "dcf7a1b535ed644d1843baebee24acb5c7e13f5393606fe2c0b889ae10058d87"
+        }
+      ],
+      "sha256": "dcf7a1b535ed644d1843baebee24acb5c7e13f5393606fe2c0b889ae10058d87",
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "用于发现同一 Wi-Fi 或热点上的你的设备，并在确认配对后同步阅读记录、传送你选择的本地书籍。",
+          "NSPhotoLibraryAddUsageDescription": "用于将你选择保存的封面、插图、摘录、阅读报告或纪念图片添加到相册，不读取相册中的照片。"
+        }
+      }
+    }
+  ]
+}
