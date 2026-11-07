@@ -5,7 +5,7 @@
   "description": "轻小说文库（Wenku8）第三方客户端的安装源。\n\n安装包直接来自上游 GitHub Release，未签名，需要自行签名后侧载。",
   "website": "https://github.com/mikufoxxx/Wenku8_Flutter/releases/tag/v0.5.6",
   "tintColor": "#5B8DEF",
-  "iconURL": "https://raw.githubusercontent.com/<your-github-user>/<your-repo>/main/icon.png",
+  "iconURL": "https://raw.githubusercontent.com/adoorgod/Wenku8-AltStore-Source/main/icon.png",
   "apps": [
     {
       "name": "轻小说文库 Wenku8",
@@ -13,7 +13,7 @@
       "developerName": "mikufoxxx",
       "subtitle": "轻小说文库与本地书籍阅读器",
       "localizedDescription": "轻小说文库（Wenku8）第三方阅读客户端，支持在线书架、本地书籍导入、离线阅读与朗读。安装包由上游 Release 提供，未签名，需自行签名侧载。",
-      "iconURL": "https://raw.githubusercontent.com/<your-github-user>/<your-repo>/main/icon.png",
+      "iconURL": "https://raw.githubusercontent.com/adoorgod/Wenku8-AltStore-Source/main/icon.png",
       "tintColor": "#5B8DEF",
       "category": "other",
       "version": "0.5.6",
